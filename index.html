@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claim Max RCM — Your Claims, Our Responsibility</title>
+  <meta name="description" content="Medical Billing Services that streamlines your revenue cycle management, ensuring clean claims, compliant workflows, low denials, & faster reimbursements." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon"><i class="fas fa-shield-halved"></i></span>
+        <div class="logo-text">
+          <span class="logo-name">ClaimMax</span>
+          <span class="logo-sub">RCM</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About Us</a></li>
+        <li class="dropdown">
+          <a href="#services">Services <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#services">Medical Billing Service</a></li>
+            <li><a href="#services">Revenue Cycle Management</a></li>
+            <li><a href="#services">Credentialing Services</a></li>
+            <li><a href="#services">Denial Management</a></li>
+            <li><a href="#services">Telehealth Billing</a></li>
+            <li><a href="#services">AR Follow Up</a></li>
+            <li><a href="#services">Prior Authorization</a></li>
+            <li><a href="#services">Payment Posting</a></li>
+          </ul>
+        </li>
+        <li><a href="#specialties">Specialties</a></li>
+        <li><a href="#workflow">How It Works</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-nav">Free Consultation</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <header class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge" data-animate="fade-up">
+          <i class="fas fa-star"></i> Trusted by 150+ Healthcare Providers
+        </div>
+        <h1 data-animate="fade-up" data-delay="100">
+          Maximizing Your Practice Revenue,
+          <span class="gradient-text">Caring for Your Claims</span>
+        </h1>
+        <p class="hero-desc" data-animate="fade-up" data-delay="200">
+          Our Medical Billing Service offers smooth claim submission, faster reimbursements, and fewer denials for practices of all sizes. With advanced tools and expert teams, we help healthcare providers improve collections, reduce administrative burdens, and build financial stability.
+        </p>
+        <div class="hero-cta" data-animate="fade-up" data-delay="300">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            Get Free Consultation <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#specialties" class="btn btn-outline btn-lg">
+            See All Specialties
+          </a>
+        </div>
+        <div class="hero-trust" data-animate="fade-up" data-delay="400">
+          <div class="trust-avatars">
+            <div class="avatar" style="background: #4f46e5;">Dr</div>
+            <div class="avatar" style="background: #0891b2;">Md</div>
+            <div class="avatar" style="background: #059669;">Rn</div>
+            <div class="avatar" style="background: #d97706;">Np</div>
+          </div>
+          <div class="trust-text">
+            <strong>4.9/5</strong> rated by healthcare professionals
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-left">
+        <div class="hero-card hero-card-main">
+          <div class="card-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+          <h3>Revenue Optimized</h3>
+          <div class="card-stat">
+            <span class="stat-number counter" data-target="99">0</span><span>%</span>
+            <small>Claim Acceptance</small>
+          </div>
+        </div>
+        <div class="hero-card hero-card-float hero-card-float-1">
+          <i class="fas fa-check-circle"></i> Clean Claims Submitted
+        </div>
+        <div class="hero-card hero-card-float hero-card-float-2">
+          <i class="fas fa-chart-line"></i> Revenue +42%
+        </div>
+        <div class="hero-card hero-card-float hero-card-float-3">
+          <i class="fas fa-clock"></i> 24hr Turnaround
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </header>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-animate="fade-up">
+          <div class="stat-icon"><i class="fas fa-check-double"></i></div>
+          <div class="stat-value"><span class="counter" data-target="99">0</span>%</div>
+          <div class="stat-label">Claim Acceptance Rate</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="100">
+          <div class="stat-icon"><i class="fas fa-stethoscope"></i></div>
+          <div class="stat-value"><span class="counter" data-target="50">0</span>+</div>
+          <div class="stat-label">Specialties Covered</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="200">
+          <div class="stat-icon"><i class="fas fa-user-doctor"></i></div>
+          <div class="stat-value"><span class="counter" data-target="150">0</span>+</div>
+          <div class="stat-label">Healthcare Providers Served</div>
+        </div>
+        <div class="stat-item" data-animate="fade-up" data-delay="300">
+          <div class="stat-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="stat-value"><span class="counter" data-target="100">0</span>+</div>
+          <div class="stat-label">Data Security Measures</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual" data-animate="fade-right">
+          <div class="about-image-wrapper">
+            <div class="about-pattern"></div>
+            <div class="about-card-visual">
+              <div class="about-icon-grid">
+                <div class="aig-item"><i class="fas fa-heart-pulse"></i></div>
+                <div class="aig-item"><i class="fas fa-file-medical"></i></div>
+                <div class="aig-item"><i class="fas fa-hand-holding-dollar"></i></div>
+                <div class="aig-item"><i class="fas fa-hospital"></i></div>
+              </div>
+              <div class="experience-badge">
+                <span class="exp-number">10+</span>
+                <span class="exp-text">Years of<br>Experience</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content" data-animate="fade-left">
+          <div class="section-label">About Claim Max RCM</div>
+          <h2 class="section-title">Your Trusted Partner in <span class="gradient-text">Healthcare Revenue</span></h2>
+          <p class="about-text">
+            Managing the financial side of healthcare is very complex. From revenue cycle management services to credentialing and contracting, every step requires accuracy and precision.
+          </p>
+          <p class="about-text">
+            Claim Max RCM brings years of experience supporting physicians, clinics, and hospitals across multiple specialties, making us one of the <strong>top medical billing companies in USA</strong>.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <i class="fas fa-circle-check"></i>
+              <span>HIPAA Compliant Processes</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-circle-check"></i>
+              <span>Certified Medical Coders</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-circle-check"></i>
+              <span>24/7 Dedicated Support</span>
+            </div>
+            <div class="about-feature">
+              <i class="fas fa-circle-check"></i>
+              <span>Advanced EHR/EMR Integration</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">More About Us <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Comprehensive Medical Billing <span class="gradient-text">Services</span></h2>
+        <p class="section-desc">End-to-end revenue cycle solutions designed to maximize your practice's financial performance while you focus on patient care.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-animate="fade-up">
+          <div class="service-icon" style="--accent: #4f46e5;">
+            <i class="fas fa-file-invoice-dollar"></i>
+          </div>
+          <h3>Medical Billing Services</h3>
+          <p>Smooth claim submission, faster reimbursements, and reduced denials for practices of all sizes with our expert billing team.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="50">
+          <div class="service-icon" style="--accent: #0891b2;">
+            <i class="fas fa-id-card"></i>
+          </div>
+          <h3>Credentialing & Contracting</h3>
+          <p>Provider credentialing support and authorization request handling to keep your practice compliant and in-network.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="100">
+          <div class="service-icon" style="--accent: #059669;">
+            <i class="fas fa-rotate"></i>
+          </div>
+          <h3>Revenue Cycle Management</h3>
+          <p>Comprehensive financial cycle management that optimizes every touchpoint from patient registration to final payment.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="150">
+          <div class="service-icon" style="--accent: #d97706;">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h3>Prior Authorization</h3>
+          <p>Efficient authorization request processing and follow-up support to prevent treatment delays and claim rejections.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="200">
+          <div class="service-icon" style="--accent: #dc2626;">
+            <i class="fas fa-ban"></i>
+          </div>
+          <h3>Denial Management</h3>
+          <p>Expert claim denial resolution and resubmission services that recover lost revenue and reduce future denials.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="250">
+          <div class="service-icon" style="--accent: #7c3aed;">
+            <i class="fas fa-magnifying-glass-dollar"></i>
+          </div>
+          <h3>AR Follow Up</h3>
+          <p>Proactive accounts receivable follow-up on outstanding claims to ensure timely payments and improved cash flow.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="300">
+          <div class="service-icon" style="--accent: #0d9488;">
+            <i class="fas fa-credit-card"></i>
+          </div>
+          <h3>Payment Posting</h3>
+          <p>Accurate healthcare payment processing and recording that gives you clear visibility into your practice finances.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="service-card" data-animate="fade-up" data-delay="350">
+          <div class="service-icon" style="--accent: #2563eb;">
+            <i class="fas fa-laptop-medical"></i>
+          </div>
+          <h3>Telehealth Billing</h3>
+          <p>Specialized billing for telehealth service providers with expertise in virtual care coding and compliance requirements.</p>
+          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="why-us section" id="why-us">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label">Why Choose Us</div>
+        <h2 class="section-title">The ClaimMax <span class="gradient-text">Advantage</span></h2>
+        <p class="section-desc">We don't just process claims — we partner with your practice to drive financial growth and operational excellence.</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-animate="fade-up">
+          <div class="why-number">01</div>
+          <div class="why-icon"><i class="fas fa-eye"></i></div>
+          <h3>Expertise & Transparency</h3>
+          <p>As one of the top medical billing companies in USA, we bring experience and reliability to every claim, so that your practice receives the support it needs to maintain healthy cash flow.</p>
+        </div>
+        <div class="why-card" data-animate="fade-up" data-delay="100">
+          <div class="why-number">02</div>
+          <div class="why-icon"><i class="fas fa-heart"></i></div>
+          <h3>Prioritizing Your Financial Health</h3>
+          <p>Through healthcare revenue cycle outsourcing, we make your financial health as much of a priority as patient care, ensuring sustainable growth for your practice.</p>
+        </div>
+        <div class="why-card" data-animate="fade-up" data-delay="200">
+          <div class="why-number">03</div>
+          <div class="why-icon"><i class="fas fa-sliders"></i></div>
+          <h3>Customized RCM Solutions</h3>
+          <p>With RCM consulting services, we assess your revenue cycle, identify gaps, and design a strategy that fits your specialty and practice size perfectly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORKFLOW ===== -->
+  <section class="workflow section" id="workflow">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label">Our Process</div>
+        <h2 class="section-title">How We <span class="gradient-text">Work</span></h2>
+        <p class="section-desc">A streamlined 4-step process designed for maximum efficiency and revenue optimization.</p>
+      </div>
+      <div class="workflow-timeline">
+        <div class="workflow-line"></div>
+        <div class="workflow-step" data-animate="fade-up">
+          <div class="step-number">1</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-user-plus"></i></div>
+            <h3>Patient Registration</h3>
+            <p>We collect accurate patient demographics and perform eligibility checks with insurance providers to prevent errors from the start.</p>
+          </div>
+        </div>
+        <div class="workflow-step" data-animate="fade-up" data-delay="100">
+          <div class="step-number">2</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-keyboard"></i></div>
+            <h3>Charge Entry</h3>
+            <p>Our certified team assigns the correct CPT/ICD codes and enters charges carefully, so that every service is captured for proper reimbursement.</p>
+          </div>
+        </div>
+        <div class="workflow-step" data-animate="fade-up" data-delay="200">
+          <div class="step-number">3</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-paper-plane"></i></div>
+            <h3>Claim Submission</h3>
+            <p>Clean claims are submitted electronically to insurance, and we track them closely to avoid delays or unnecessary denials.</p>
+          </div>
+        </div>
+        <div class="workflow-step" data-animate="fade-up" data-delay="300">
+          <div class="step-number">4</div>
+          <div class="step-content">
+            <div class="step-icon"><i class="fas fa-chart-pie"></i></div>
+            <h3>AR & Denial Management</h3>
+            <p>We post payments, follow up on outstanding claims, and handle denials with quick corrections to improve cash flow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECIALTIES ===== -->
+  <section class="specialties section" id="specialties">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label">Our Specialties</div>
+        <h2 class="section-title">Billing Expertise Across <span class="gradient-text">50+ Specialties</span></h2>
+        <p class="section-desc">From cardiology to mental health, we have certified coders experienced in every medical specialty.</p>
+      </div>
+      <div class="specialties-grid" data-animate="fade-up">
+        <div class="specialty-chip"><i class="fas fa-heart-pulse"></i> Cardiology</div>
+        <div class="specialty-chip"><i class="fas fa-brain"></i> Neurosurgery</div>
+        <div class="specialty-chip"><i class="fas fa-bone"></i> Orthopedic</div>
+        <div class="specialty-chip"><i class="fas fa-lungs"></i> Pulmonology</div>
+        <div class="specialty-chip"><i class="fas fa-x-ray"></i> Radiology</div>
+        <div class="specialty-chip"><i class="fas fa-couch"></i> Mental Health</div>
+        <div class="specialty-chip"><i class="fas fa-syringe"></i> Anesthesia</div>
+        <div class="specialty-chip"><i class="fas fa-stomach"></i> Gastroenterology</div>
+        <div class="specialty-chip"><i class="fas fa-kidneys"></i> Nephrology</div>
+        <div class="specialty-chip"><i class="fas fa-dna"></i> Endocrinology</div>
+        <div class="specialty-chip"><i class="fas fa-hand-dots"></i> Rheumatology</div>
+        <div class="specialty-chip"><i class="fas fa-ribbon"></i> Oncology</div>
+        <div class="specialty-chip"><i class="fas fa-comments"></i> Psychology</div>
+        <div class="specialty-chip"><i class="fas fa-eye"></i> Ophthalmology</div>
+        <div class="specialty-chip"><i class="fas fa-kit-medical"></i> General Surgery</div>
+        <div class="specialty-chip"><i class="fas fa-droplet"></i> Urology</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EHR INTEGRATIONS ===== -->
+  <section class="integrations section">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label">Seamless Integration</div>
+        <h2 class="section-title">Works With Your <span class="gradient-text">EHR/EMR System</span></h2>
+        <p class="section-desc">We integrate with 35+ leading EHR/EMR platforms for a seamless billing experience.</p>
+      </div>
+      <div class="ehr-marquee" data-animate="fade-up">
+        <div class="marquee-track">
+          <div class="ehr-item">AdvancedMD</div>
+          <div class="ehr-item">Allscripts</div>
+          <div class="ehr-item">Kareo</div>
+          <div class="ehr-item">eClinicalWorks</div>
+          <div class="ehr-item">NextGen</div>
+          <div class="ehr-item">Oracle Cerner</div>
+          <div class="ehr-item">SimplePractice</div>
+          <div class="ehr-item">TherapyNotes</div>
+          <div class="ehr-item">WebPT</div>
+          <div class="ehr-item">PracticeFusion</div>
+          <div class="ehr-item">Greenway</div>
+          <div class="ehr-item">GE Healthcare</div>
+          <div class="ehr-item">CollaborateMD</div>
+          <div class="ehr-item">OpenEMR</div>
+          <div class="ehr-item">OfficeAlly</div>
+          <div class="ehr-item">iCaNotes</div>
+          <div class="ehr-item">InSync</div>
+          <div class="ehr-item">Axxess</div>
+          <!-- duplicate for seamless loop -->
+          <div class="ehr-item">AdvancedMD</div>
+          <div class="ehr-item">Allscripts</div>
+          <div class="ehr-item">Kareo</div>
+          <div class="ehr-item">eClinicalWorks</div>
+          <div class="ehr-item">NextGen</div>
+          <div class="ehr-item">Oracle Cerner</div>
+          <div class="ehr-item">SimplePractice</div>
+          <div class="ehr-item">TherapyNotes</div>
+          <div class="ehr-item">WebPT</div>
+          <div class="ehr-item">PracticeFusion</div>
+          <div class="ehr-item">Greenway</div>
+          <div class="ehr-item">GE Healthcare</div>
+          <div class="ehr-item">CollaborateMD</div>
+          <div class="ehr-item">OpenEMR</div>
+          <div class="ehr-item">OfficeAlly</div>
+          <div class="ehr-item">iCaNotes</div>
+          <div class="ehr-item">InSync</div>
+          <div class="ehr-item">Axxess</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <div class="section-label">Testimonials</div>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+        <p class="section-desc">Hear from healthcare professionals who trust ClaimMax RCM with their billing.</p>
+      </div>
+      <div class="testimonials-grid" data-animate="fade-up">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"Since partnering with ClaimMax RCM, our claim acceptance rate has increased to 99%. Their team is responsive, knowledgeable, and truly understands the nuances of neurology billing. Our revenue has grown significantly."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #4f46e5;">PS</div>
+            <div class="author-info">
+              <strong>Dr. Pelican Steve</strong>
+              <span>Neurologist</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"ClaimMax RCM transformed our revenue cycle management. We went from constant claim denials and cash flow issues to a streamlined process. Their denial management team alone has recovered thousands in lost revenue for our practice."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #059669;">AM</div>
+            <div class="author-info">
+              <strong>Dr. Alexa Milton</strong>
+              <span>Physiotherapist</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+          </div>
+          <p class="testimonial-text">"The credentialing team at ClaimMax saved us months of headache. They handled everything from start to finish and our providers were enrolled with all major payers within weeks. Highly recommend their services."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #d97706;">RK</div>
+            <div class="author-info">
+              <strong>Dr. Rachel Kim</strong>
+              <span>Cardiologist</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-content" data-animate="fade-up">
+        <h2>Ready to Maximize Your Practice Revenue?</h2>
+        <p>Join 150+ healthcare providers who trust ClaimMax RCM. Get a free billing audit and see how much revenue you're leaving on the table.</p>
+        <div class="cta-actions">
+          <a href="#contact" class="btn btn-white btn-lg">Get Free Consultation <i class="fas fa-arrow-right"></i></a>
+          <a href="tel:+19162995335" class="btn btn-outline-white btn-lg"><i class="fas fa-phone"></i> (916) 299-5335</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info" data-animate="fade-right">
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-title">Let's Talk About Your <span class="gradient-text">Revenue Goals</span></h2>
+          <p>Schedule a free consultation and discover how ClaimMax RCM can transform your practice's financial performance.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+              <div>
+                <strong>Office Address</strong>
+                <span>3400 Cottage Way, Ste G2 #31873,<br>Sacramento, California 95825 US</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <strong>Phone Number</strong>
+                <a href="tel:+19162995335">+1 (916) 299-5335</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <strong>Email Address</strong>
+                <a href="mailto:info@claimmaxrcm.com">info@claimmaxrcm.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-clock"></i></div>
+              <div>
+                <strong>Business Hours</strong>
+                <span>Monday – Friday: 8:00 AM to 5:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper" data-animate="fade-left">
+          <form class="contact-form" id="contactForm">
+            <h3>Book a Free Consultation</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@practice.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+1 (___) ___-____" />
+            </div>
+            <div class="form-group">
+              <label for="specialty">Specialty</label>
+              <select id="specialty" name="specialty">
+                <option value="">Select your specialty</option>
+                <option>Cardiology</option>
+                <option>Neurosurgery</option>
+                <option>Orthopedic</option>
+                <option>Radiology</option>
+                <option>Mental Health</option>
+                <option>Pulmonology</option>
+                <option>Gastroenterology</option>
+                <option>Urology</option>
+                <option>Oncology</option>
+                <option>General Surgery</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your practice and billing needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">
+              Get Free Consultation <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon"><i class="fas fa-shield-halved"></i></span>
+            <div class="logo-text">
+              <span class="logo-name">ClaimMax</span>
+              <span class="logo-sub">RCM</span>
+            </div>
+          </a>
+          <p>Your Claims, Our Responsibility. Medical Billing Services that streamline your revenue cycle management, ensuring clean claims, compliant workflows, low denials, and faster reimbursements.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Medical Billing</a></li>
+            <li><a href="#services">Revenue Cycle Management</a></li>
+            <li><a href="#services">Credentialing Services</a></li>
+            <li><a href="#services">Denial Management</a></li>
+            <li><a href="#services">Telehealth Billing</a></li>
+            <li><a href="#services">AR Follow Up</a></li>
+            <li><a href="#services">Prior Authorization</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Specialties</h4>
+          <ul>
+            <li><a href="#specialties">Cardiology</a></li>
+            <li><a href="#specialties">Orthopedic</a></li>
+            <li><a href="#specialties">Gastroenterology</a></li>
+            <li><a href="#specialties">Neurosurgery</a></li>
+            <li><a href="#specialties">Mental Health</a></li>
+            <li><a href="#specialties">Radiology</a></li>
+            <li><a href="#specialties">General Surgery</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 ClaimMax RCM. All Rights Reserved.</p>
+        <p>Your Claims, Our Responsibility</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
