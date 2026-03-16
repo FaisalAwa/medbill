@@ -384,40 +384,44 @@ ul { list-style: none; }
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  min-height: 520px;
+  min-height: 560px;
+  margin-right: -60px;
+  margin-bottom: -100px;
 }
 
 .hero-doctor-img {
   position: relative;
   z-index: 3;
-  width: 420px;
-  max-width: 100%;
+  width: 520px;
+  max-width: 110%;
+  align-self: flex-end;
 }
 .hero-doctor-img img {
   width: 100%;
   height: auto;
   display: block;
   object-fit: contain;
-  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.12));
+  object-position: bottom;
+  filter: drop-shadow(0 10px 40px rgba(0,0,0,0.15));
 }
 
 /* Blob outlines behind doctor */
 .hero-blob {
   position: absolute;
-  top: 0;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
-  width: 480px;
-  height: 560px;
+  width: 520px;
+  height: 600px;
   z-index: 1;
   animation: blobRotate 20s linear infinite;
 }
 .hero-blob-2 {
-  width: 180px;
-  height: 180px;
-  top: -20px;
+  width: 200px;
+  height: 200px;
+  top: -30px;
   left: auto;
-  right: -20px;
+  right: -40px;
   transform: none;
   animation: blobRotateReverse 15s linear infinite;
 }
@@ -1411,10 +1415,10 @@ ul { list-style: none; }
   .hero-desc { margin-left: auto; margin-right: auto; }
   .hero-cta { justify-content: center; }
   .hero-trust { justify-content: center; }
-  .hero-visual { min-height: 360px; margin-top: 20px; }
-  .hero-doctor-img { width: 300px; }
-  .hero-blob { width: 340px; height: 400px; }
-  .hero-blob-2 { width: 120px; height: 120px; }
+  .hero-visual { min-height: 380px; margin-top: 20px; margin-right: 0; margin-bottom: -60px; }
+  .hero-doctor-img { width: 340px; max-width: 100%; }
+  .hero-blob { width: 360px; height: 420px; }
+  .hero-blob-2 { width: 130px; height: 130px; right: -10px; }
   .hero-svg-cross-3 { right: 0px; }
 
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
