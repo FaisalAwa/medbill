@@ -378,94 +378,129 @@ ul { list-style: none; }
 .trust-text { font-size: 0.9rem; color: var(--gray-600); }
 .trust-text strong { color: var(--dark); }
 
-/* Hero Visual */
+/* Hero Visual — Doctor + Animated SVGs */
 .hero-visual {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 480px;
+  align-items: flex-end;
+  min-height: 520px;
 }
 
-.hero-card {
-  border-radius: var(--radius-lg);
-  background: var(--white);
-  box-shadow: var(--shadow-lg);
-}
-
-.hero-card-main {
-  padding: 48px 40px;
-  text-align: center;
+.hero-doctor-img {
   position: relative;
-  z-index: 2;
+  z-index: 3;
+  width: 420px;
+  max-width: 100%;
 }
-.hero-card-main .card-icon {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, #eef2ff, #e0f2fe);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 20px;
-  font-size: 2rem;
-  color: var(--primary);
-}
-.hero-card-main h3 {
-  font-size: 1.25rem;
-  color: var(--dark);
-  margin-bottom: 16px;
-}
-.card-stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.stat-number {
-  font-size: 3.5rem;
-  font-weight: 800;
-  color: var(--primary);
-  line-height: 1;
-}
-.card-stat span {
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--primary);
-}
-.card-stat small {
-  font-size: 0.85rem;
-  color: var(--gray-500);
-  margin-top: 4px;
+.hero-doctor-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,0.12));
 }
 
-.hero-card-float {
+/* Blob outlines behind doctor */
+.hero-blob {
   position: absolute;
-  padding: 14px 22px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--dark);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  z-index: 3;
-  animation: float 3s ease-in-out infinite;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 480px;
+  height: 560px;
+  z-index: 1;
+  animation: blobRotate 20s linear infinite;
 }
-.hero-card-float i { font-size: 1.1rem; }
-.hero-card-float-1 {
-  top: 20px; left: -30px;
-  animation-delay: 0s;
+.hero-blob-2 {
+  width: 180px;
+  height: 180px;
+  top: -20px;
+  left: auto;
+  right: -20px;
+  transform: none;
+  animation: blobRotateReverse 15s linear infinite;
 }
-.hero-card-float-1 i { color: var(--accent); }
-.hero-card-float-2 {
-  top: 60px; right: -40px;
-  animation-delay: 1s;
+
+@keyframes blobRotate {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
 }
-.hero-card-float-2 i { color: var(--primary); }
-.hero-card-float-3 {
-  bottom: 40px; left: -20px;
-  animation-delay: 2s;
+@keyframes blobRotateReverse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
 }
-.hero-card-float-3 i { color: var(--secondary); }
+
+/* Animated medical cross SVGs */
+.hero-svg-cross,
+.hero-svg-x {
+  position: absolute;
+  z-index: 4;
+  pointer-events: none;
+}
+
+/* Green cross — top center */
+.hero-svg-cross-1 {
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: floatCross1 4s ease-in-out infinite;
+}
+/* Green outline cross — bottom left */
+.hero-svg-cross-2 {
+  bottom: 30px;
+  left: -10px;
+  animation: floatCross2 5s ease-in-out infinite;
+}
+/* Blue cross — right */
+.hero-svg-cross-3 {
+  top: 35%;
+  right: -30px;
+  animation: floatCross3 4.5s ease-in-out infinite;
+}
+/* Small green cross — bottom right */
+.hero-svg-cross-4 {
+  bottom: 60px;
+  right: 30%;
+  animation: floatCross4 3.5s ease-in-out infinite;
+}
+
+/* Blue X marks */
+.hero-svg-x-1 {
+  top: 55%;
+  left: 5%;
+  animation: floatX1 3s ease-in-out infinite;
+}
+.hero-svg-x-2 {
+  top: 25%;
+  left: 15%;
+  animation: floatX2 4s ease-in-out infinite;
+}
+
+@keyframes floatCross1 {
+  0%, 100% { transform: translateX(-50%) translateY(0) rotate(0deg); }
+  50% { transform: translateX(-50%) translateY(-14px) rotate(10deg); }
+}
+@keyframes floatCross2 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(-8deg); }
+}
+@keyframes floatCross3 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-16px) scale(1.05); }
+}
+@keyframes floatCross4 {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(15deg); }
+}
+@keyframes floatX1 {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.8; }
+  50% { transform: translateY(-8px) rotate(12deg); opacity: 1; }
+}
+@keyframes floatX2 {
+  0%, 100% { transform: translateY(0) rotate(0deg); opacity: 0.6; }
+  50% { transform: translateY(-10px) rotate(-10deg); opacity: 1; }
+}
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
@@ -1376,7 +1411,11 @@ ul { list-style: none; }
   .hero-desc { margin-left: auto; margin-right: auto; }
   .hero-cta { justify-content: center; }
   .hero-trust { justify-content: center; }
-  .hero-visual { display: none; }
+  .hero-visual { min-height: 360px; margin-top: 20px; }
+  .hero-doctor-img { width: 300px; }
+  .hero-blob { width: 340px; height: 400px; }
+  .hero-blob-2 { width: 120px; height: 120px; }
+  .hero-svg-cross-3 { right: 0px; }
 
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
