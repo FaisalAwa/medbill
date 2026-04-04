@@ -243,63 +243,26 @@
         <h2 class="section-title">Our <span class="gradient-text">Services</span></h2>
         <p class="section-desc">End-to-end revenue cycle solutions designed to maximize your practice's financial performance while you focus on patient care.</p>
       </div>
-      <div class="services-grid">
-        <div class="service-card" data-animate="fade-up">
-          <div class="service-icon" style="--accent: #4f46e5;">
-            <i class="fas fa-clipboard-check"></i>
+      <div class="services-wheel-wrap" data-animate="fade-up">
+        <!-- Circular wheel (desktop) -->
+        <div class="wheel-stage" id="wheelStage">
+          <svg id="servicesSVG" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"></svg>
+          <div class="wheel-hub">
+            <div class="hub-eyebrow">Comprehensive RCM</div>
+            <div class="hub-title">OUR<br><span>SERVICES</span></div>
+            <div class="hub-desc">End-to-end solutions for your revenue cycle</div>
           </div>
-          <h3>Eligibility & Benefits Verification</h3>
-          <p>Real-time digital verification and prior authorization management to prevent front-end rejections.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
         </div>
-        <div class="service-card" data-animate="fade-up" data-delay="50">
-          <div class="service-icon" style="--accent: #0891b2;">
-            <i class="fas fa-code"></i>
-          </div>
-          <h3>Medical Coding & Documentation</h3>
-          <p>Certified ICD-10 and CPT coding with rigorous clinical documentation audits to ensure compliance.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="service-card" data-animate="fade-up" data-delay="100">
-          <div class="service-icon" style="--accent: #059669;">
-            <i class="fas fa-file-invoice-dollar"></i>
-          </div>
-          <h3>Clean Claim Submission</h3>
-          <p>Electronic claim filing through top-tier clearinghouses with manual secondary reviews.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="service-card" data-animate="fade-up" data-delay="150">
-          <div class="service-icon" style="--accent: #d97706;">
-            <i class="fas fa-credit-card"></i>
-          </div>
-          <h3>Electronic Payment Posting</h3>
-          <p>Efficient tracking of ERAs, EOBs, and manual checks with daily bank reconciliation.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="service-card" data-animate="fade-up" data-delay="200">
-          <div class="service-icon" style="--accent: #dc2626;">
-            <i class="fas fa-magnifying-glass-dollar"></i>
-          </div>
-          <h3>Aggressive AR & Denial Management</h3>
-          <p>Root-cause analysis for every denial and persistent follow-ups on outstanding aging claims (30, 60, 90+ days).</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="service-card" data-animate="fade-up" data-delay="250">
-          <div class="service-icon" style="--accent: #7c3aed;">
-            <i class="fas fa-id-card"></i>
-          </div>
-          <h3>Provider Credentialing</h3>
-          <p>Complete management of provider enrollments, CAQH profile updates, and re-attestations.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="service-card" data-animate="fade-up" data-delay="300">
-          <div class="service-icon" style="--accent: #0d9488;">
-            <i class="fas fa-headset"></i>
-          </div>
-          <h3>Patient Billing & Support</h3>
-          <p>Clear, jargon-free patient statements and dedicated helpdesk support for billing inquiries.</p>
-          <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
+        <!-- Stacked list (mobile fallback) -->
+        <ul class="services-list-mobile">
+          <li><span class="slm-num">01</span><div><strong>Eligibility &amp; Benefits Verification</strong><p>Real-time digital verification and prior authorization management.</p></div></li>
+          <li><span class="slm-num">02</span><div><strong>Medical Coding &amp; Documentation</strong><p>Certified ICD-10 and CPT coding with rigorous compliance audits.</p></div></li>
+          <li><span class="slm-num">03</span><div><strong>Clean Claim Submission</strong><p>Electronic claim filing through top-tier clearinghouses.</p></div></li>
+          <li><span class="slm-num">04</span><div><strong>Electronic Payment Posting</strong><p>Efficient tracking of ERAs, EOBs, and manual checks daily.</p></div></li>
+          <li><span class="slm-num">05</span><div><strong>AR &amp; Denial Management</strong><p>Root-cause analysis for every denial with persistent follow-ups.</p></div></li>
+          <li><span class="slm-num">06</span><div><strong>Provider Credentialing</strong><p>Complete management of provider enrollments and CAQH updates.</p></div></li>
+          <li><span class="slm-num">07</span><div><strong>Patient Billing &amp; Support</strong><p>Clear patient statements and dedicated helpdesk support.</p></div></li>
+        </ul>
       </div>
     </div>
   </section>
